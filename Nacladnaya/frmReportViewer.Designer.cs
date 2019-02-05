@@ -35,8 +35,10 @@
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.bsOrderEntity = new System.Windows.Forms.BindingSource(this.components);
             this.bsDataSetEntity = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetEntityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bsOrderEntity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsDataSetEntity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetEntityBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
@@ -51,7 +53,7 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Nacladnaya.Nacladnaya.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(719, 586);
+            this.reportViewer1.Size = new System.Drawing.Size(773, 566);
             this.reportViewer1.TabIndex = 0;
             // 
             // bsOrderEntity
@@ -63,11 +65,16 @@
             // 
             this.bsDataSetEntity.DataSource = typeof(Nacladnaya.DataSetEntity);
             // 
+            // DataSetEntityBindingSource
+            // 
+            this.DataSetEntityBindingSource.DataMember = "EntityList";
+            this.DataSetEntityBindingSource.DataSource = typeof(Nacladnaya.DataSetEntity);
+            // 
             // frmReportViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 586);
+            this.ClientSize = new System.Drawing.Size(773, 566);
             this.Controls.Add(this.reportViewer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmReportViewer";
@@ -75,15 +82,16 @@
             this.Load += new System.EventHandler(this.frmReportViewer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsOrderEntity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsDataSetEntity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetEntityBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource bsOrderEntity;
         private System.Windows.Forms.BindingSource bsDataSetEntity;
-
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource DataSetEntityBindingSource;
     }
 }

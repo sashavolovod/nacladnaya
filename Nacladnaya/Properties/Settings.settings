@@ -16,5 +16,8 @@
     <Setting Name="lastDocsNumber" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
+    <Setting Name="employee" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Инженер-технолог Онанчук В.В.</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

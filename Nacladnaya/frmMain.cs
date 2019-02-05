@@ -59,7 +59,7 @@ namespace Nacladnaya
             settings.Save();
         }
 
-        private void выходToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void miExit_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -91,15 +91,20 @@ namespace Nacladnaya
             frmReport.Show();
         }
 
-        private void очиститьСписокToolStripMenuItem_Click(object sender, EventArgs e)
+        private void miClearList_Click(object sender, EventArgs e)
         {
             orderList.Clear();
         }
 
-        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        private void miAbout_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Программа для печати приемо-сдаточных накладных\nРазработчик: Воловод А.А. т. 66-16\n(c) inc.gefest.org 2013",
                 "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void tsbSettings_Click(object sender, EventArgs e)
+        {
+            new frmSettings().ShowDialog(); 
         }
     }
 }
