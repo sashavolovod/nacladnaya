@@ -18,7 +18,6 @@ namespace Nacladnaya
         {
             InitializeComponent();
 
-
             bsDataSetEntity.DataSource = ds;
             bsOrderEntity.DataSource = ds.EntityList;
             
@@ -26,7 +25,7 @@ namespace Nacladnaya
             parameters[0] = new ReportParameter("employee", Settings.Default.employee);
             this.reportViewer1.LocalReport.SetParameters(parameters);
             
-            if (ds.EntityList[0].OrderNumber.StartsWith("23-"))
+            if (ds.EntityList[0].OrderNumber.StartsWith("23-") || ds.EntityList[0].OrderNumber.StartsWith("24"))
                 reportViewer1.LocalReport.ReportEmbeddedResource = "Nacladnaya.Nacladnaya-23.rdlc";
             else
                 reportViewer1.LocalReport.ReportEmbeddedResource = "Nacladnaya.Nacladnaya.rdlc";

@@ -185,7 +185,7 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQiSURBVEhLjVVrSJtXGA774a+BPxQv4B0nwn6NIdMxb+yH
-        XX8Iw2wKGysT1DnvViaphZRWOjYqspXRgUo77bRUOjvXInMwZ40ab5hotJqY1ERzNfe7TfTZeT+zWG26
+        XX8Iw2wKGysT1DnvViaphZRWOjYqshXpYEo77bRUOjvXInMwZ40ab5hotJqY1ERzNfe7TfTZeT+zWG26
         +sDD4Zzzvc/3nsvzHl4EvBEfH/9eUlJSQUJCQkTSHDExMfGDioqKzrKysvZQ7KsRFRX1lkwmC7rdbkSi
         0+mEzWaDxWKByWSCw+HA4OCgMxT+v4ibmJg4wCtwcHAAv9/P/cRqtcJgMKCvr88aio2M6Ojodzo7O7d2
         d3dDMicRDAbh8/m4rEnUaDRCr9e/XjgjI+PCf0s9jcPDQ+zv73OZ2u12mM1m6HQ6jq8VzszM/JyWRnt3
@@ -193,8 +193,8 @@
         A3C6/bDaXDDtWbGrM+GZWgulSg2VSgmDXov+/gFzSCIycnNzhZsb6xgaU+CPGQcmll0Qr3mwsOFl9GDu
         qQczMhf+XrJjVGTGrd80mF/V4vGjXz2xsbHvhmSOUVNTc59dMXYmR4f2cNqFR2Iv/lz0YWzBjcfzbvwu
         dmGEjT8QuTH8xI0HU27cHLFhWuZEMOBHT0/P4fj4uKW+vv4hJ5qTk9PAqb2AX/6y4Nrtp+gaWkPXiAbf
-        scw672/j6tA2hHfVuHxHg6v9OrT8pMPMmisUdYz8/HwBr7a2djzUD6Nn3AL+9SWUfz+LT7uXUf6DBF/+
-        vIby7hWcvyZBsUCC95ul+LBNyW3RabS2top4zc3N06F+GLf/sTExOWruKFB/V47GQTla7m3h634FLtyS
+        scw672/j6tA2hHfVuHxHg6v9OrT06DCz5gpFHSM/P1/Aq62tHQ/1w/h53AL+9SWUfz+LT7uXUf6DBF/+
+        tIby7hWcvyZBsUCC95ul+LBNyW3RabS2top4zc3N06F+GLf/sTExOWruKFB/V47GQTla7m3h634FLtyS
         45Mbcpy/IkdhmwqLm75Q1DE6OjqkvMbGRhF1yKpEulpjK06cuz6Pj7tm8dmPYnxxU8zaWfC7xfjoWzHy
         L4nx9lczKLgog0q/z5knHM/Q1tYmoa0QkVXJokRync3ugMrogEJvwzOjHduM1CoNdsh1dqzv2CFV2bG1
         a4eDHbjNdhxLWmFhchO5iGg0mrjLbzLoI3LPeESz6aglp5IL1Wo1yANk96amJgmvqqpKRJM0SMICgQCp
@@ -202,7 +202,7 @@
         nTjSfFpaGqqrqzl7b2xscMnV1dWt8kpKSu7Nzc1hcnISzCQYHR3llnUWksjS0hJ6e3sxNTXFaSwsLIDP
         50+QR5JjYmLa4+LiLicnJ9+gIk8HQcXoRVKx0Wq1L41TGRUKhQZm6RamISQdpplFwmFkZ2dXra6uQiqV
         QiKRnOD6+joWFxexvLyMlZWVMDc3NzEwMOBn4VFHKhHA3rts9kB+wx5TAWP7abK5l8ZYhpdYW8fC3zxS
-        IfB4/wKNNrlnBX4UHgAAAABJRU5ErkJggg==
+        IfB4/wJBELlV1veeKwAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -213,6 +213,9 @@
   </metadata>
   <metadata name="bsOrders.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>335, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

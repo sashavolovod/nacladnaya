@@ -54,12 +54,12 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.dgvOrders = new System.Windows.Forms.DataGridView();
+            this.Stoikost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stoikost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bsOrders = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.tsMain.SuspendLayout();
@@ -70,13 +70,15 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miFile,
             this.miOrders,
             this.miHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(834, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1139, 30);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,7 +90,7 @@
             this.toolStripSeparator1,
             this.выходToolStripMenuItem1});
             this.miFile.Name = "miFile";
-            this.miFile.Size = new System.Drawing.Size(48, 20);
+            this.miFile.Size = new System.Drawing.Size(57, 24);
             this.miFile.Text = "Файл";
             // 
             // miPrint
@@ -96,7 +98,7 @@
             this.miPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.miPrint.Image = ((System.Drawing.Image)(resources.GetObject("miPrint.Image")));
             this.miPrint.Name = "miPrint";
-            this.miPrint.Size = new System.Drawing.Size(152, 22);
+            this.miPrint.Size = new System.Drawing.Size(153, 24);
             this.miPrint.Text = "Печать";
             this.miPrint.Click += new System.EventHandler(this.tsbPrint_Click);
             // 
@@ -104,19 +106,19 @@
             // 
             this.miExit.Image = global::Nacladnaya.Properties.Resources.wheel;
             this.miExit.Name = "miExit";
-            this.miExit.Size = new System.Drawing.Size(152, 22);
+            this.miExit.Size = new System.Drawing.Size(153, 24);
             this.miExit.Text = "Настройки";
             this.miExit.Click += new System.EventHandler(this.tsbSettings_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(150, 6);
             // 
             // выходToolStripMenuItem1
             // 
             this.выходToolStripMenuItem1.Name = "выходToolStripMenuItem1";
-            this.выходToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.выходToolStripMenuItem1.Size = new System.Drawing.Size(153, 24);
             this.выходToolStripMenuItem1.Text = "Выход";
             this.выходToolStripMenuItem1.Click += new System.EventHandler(this.miExit_Click);
             // 
@@ -126,14 +128,14 @@
             this.miAddOreder,
             this.miClearList});
             this.miOrders.Name = "miOrders";
-            this.miOrders.Size = new System.Drawing.Size(58, 20);
+            this.miOrders.Size = new System.Drawing.Size(70, 24);
             this.miOrders.Text = "Заказы";
             // 
             // miAddOreder
             // 
             this.miAddOreder.Image = global::Nacladnaya.Properties.Resources._1383132905_Add;
             this.miAddOreder.Name = "miAddOreder";
-            this.miAddOreder.Size = new System.Drawing.Size(168, 22);
+            this.miAddOreder.Size = new System.Drawing.Size(194, 24);
             this.miAddOreder.Text = "Добавить заказ";
             this.miAddOreder.Click += new System.EventHandler(this.tsbAddOrder_Click);
             // 
@@ -141,7 +143,7 @@
             // 
             this.miClearList.Image = global::Nacladnaya.Properties.Resources._1383133237_33;
             this.miClearList.Name = "miClearList";
-            this.miClearList.Size = new System.Drawing.Size(168, 22);
+            this.miClearList.Size = new System.Drawing.Size(194, 24);
             this.miClearList.Text = "Очистить список";
             this.miClearList.Click += new System.EventHandler(this.miClearList_Click);
             // 
@@ -150,18 +152,19 @@
             this.miHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miAbout});
             this.miHelp.Name = "miHelp";
-            this.miHelp.Size = new System.Drawing.Size(68, 20);
+            this.miHelp.Size = new System.Drawing.Size(81, 24);
             this.miHelp.Text = "Помощь";
             // 
             // miAbout
             // 
             this.miAbout.Name = "miAbout";
-            this.miAbout.Size = new System.Drawing.Size(149, 22);
+            this.miAbout.Size = new System.Drawing.Size(173, 24);
             this.miAbout.Text = "О программе";
             this.miAbout.Click += new System.EventHandler(this.miAbout_Click);
             // 
             // tsMain
             // 
+            this.tsMain.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tsMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbAddOrder,
             this.tsbClear,
@@ -170,9 +173,10 @@
             this.toolStripLabel1,
             this.tbDocsNumber,
             this.toolStripLabel2});
-            this.tsMain.Location = new System.Drawing.Point(0, 24);
+            this.tsMain.Location = new System.Drawing.Point(0, 30);
             this.tsMain.Name = "tsMain";
-            this.tsMain.Size = new System.Drawing.Size(834, 25);
+            this.tsMain.Padding = new System.Windows.Forms.Padding(0, 5, 1, 5);
+            this.tsMain.Size = new System.Drawing.Size(1139, 37);
             this.tsMain.TabIndex = 10;
             this.tsMain.Text = "toolStrip1";
             // 
@@ -183,7 +187,7 @@
             this.tsbAddOrder.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbAddOrder.Margin = new System.Windows.Forms.Padding(0, 1, 5, 2);
             this.tsbAddOrder.Name = "tsbAddOrder";
-            this.tsbAddOrder.Size = new System.Drawing.Size(110, 22);
+            this.tsbAddOrder.Size = new System.Drawing.Size(137, 24);
             this.tsbAddOrder.Text = "Добавить заказ";
             this.tsbAddOrder.ToolTipText = "Добавить заказ";
             this.tsbAddOrder.Click += new System.EventHandler(this.tsbAddOrder_Click);
@@ -194,7 +198,7 @@
             this.tsbClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbClear.Margin = new System.Windows.Forms.Padding(0, 1, 5, 2);
             this.tsbClear.Name = "tsbClear";
-            this.tsbClear.Size = new System.Drawing.Size(79, 22);
+            this.tsbClear.Size = new System.Drawing.Size(93, 24);
             this.tsbClear.Text = "Очистить";
             this.tsbClear.ToolTipText = "Очистить список заказов";
             this.tsbClear.Click += new System.EventHandler(this.tsbClear_Click);
@@ -204,7 +208,7 @@
             this.tsbPrint.Image = ((System.Drawing.Image)(resources.GetObject("tsbPrint.Image")));
             this.tsbPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbPrint.Name = "tsbPrint";
-            this.tsbPrint.Size = new System.Drawing.Size(66, 22);
+            this.tsbPrint.Size = new System.Drawing.Size(78, 24);
             this.tsbPrint.Text = "Печать";
             this.tsbPrint.ToolTipText = "Печать";
             this.tsbPrint.Click += new System.EventHandler(this.tsbPrint_Click);
@@ -214,7 +218,7 @@
             this.tsbSettings.Image = global::Nacladnaya.Properties.Resources.wheel;
             this.tsbSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSettings.Name = "tsbSettings";
-            this.tsbSettings.Size = new System.Drawing.Size(87, 22);
+            this.tsbSettings.Size = new System.Drawing.Size(104, 24);
             this.tsbSettings.Text = "Настройки";
             this.tsbSettings.ToolTipText = "Печать";
             this.tsbSettings.Click += new System.EventHandler(this.tsbSettings_Click);
@@ -222,27 +226,29 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(127, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(160, 24);
             this.toolStripLabel1.Text = "   Номер документа с:";
             // 
             // tbDocsNumber
             // 
+            this.tbDocsNumber.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbDocsNumber.Name = "tbDocsNumber";
-            this.tbDocsNumber.Size = new System.Drawing.Size(50, 25);
+            this.tbDocsNumber.Size = new System.Drawing.Size(65, 27);
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(111, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(141, 24);
             this.toolStripLabel2.Text = "     Дата документа:";
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 425);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 638);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(834, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1139, 22);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -253,18 +259,18 @@
             // 
             // dgvOrders
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Info;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvOrders.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvOrders.AutoGenerateColumns = false;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOrders.ColumnHeadersHeight = 38;
             this.dgvOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
@@ -274,10 +280,19 @@
             this.Stoikost});
             this.dgvOrders.DataSource = this.bsOrders;
             this.dgvOrders.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvOrders.Location = new System.Drawing.Point(0, 49);
+            this.dgvOrders.Location = new System.Drawing.Point(0, 67);
+            this.dgvOrders.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvOrders.Name = "dgvOrders";
-            this.dgvOrders.Size = new System.Drawing.Size(834, 376);
+            this.dgvOrders.RowTemplate.Height = 28;
+            this.dgvOrders.Size = new System.Drawing.Size(1139, 571);
             this.dgvOrders.TabIndex = 12;
+            // 
+            // Stoikost
+            // 
+            this.Stoikost.DataPropertyName = "Stoikost";
+            this.Stoikost.HeaderText = "Стойкость";
+            this.Stoikost.Name = "Stoikost";
+            this.Stoikost.Width = 120;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -290,33 +305,28 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "OrderNumber";
             this.dataGridViewTextBoxColumn2.HeaderText = "Заводской номер";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 250;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "OrderDescription";
             this.dataGridViewTextBoxColumn3.HeaderText = "Наименование";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 200;
+            this.dataGridViewTextBoxColumn3.Width = 300;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "UnitName";
             this.dataGridViewTextBoxColumn4.HeaderText = "Ед. изм.";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 50;
+            this.dataGridViewTextBoxColumn4.Width = 95;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Qty";
             this.dataGridViewTextBoxColumn5.HeaderText = "Кол-во";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 50;
-            // 
-            // Stoikost
-            // 
-            this.Stoikost.DataPropertyName = "Stoikost";
-            this.Stoikost.HeaderText = "Стойкость";
-            this.Stoikost.Name = "Stoikost";
+            this.dataGridViewTextBoxColumn5.Width = 75;
             // 
             // bsOrders
             // 
@@ -325,15 +335,17 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 447);
+            this.ClientSize = new System.Drawing.Size(1139, 660);
             this.Controls.Add(this.dgvOrders);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tsMain);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMain";
             this.Text = "Накладная";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
@@ -375,13 +387,13 @@
         private System.Windows.Forms.BindingSource bsOrders;
         private System.Windows.Forms.DataGridView dgvOrders;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripButton tsbSettings;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Stoikost;
-        private System.Windows.Forms.ToolStripButton tsbSettings;
     }
 }
 

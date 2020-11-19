@@ -26,7 +26,7 @@ namespace Nacladnaya
         private void Form1_Load(object sender, EventArgs e)
         {
             dtpOrderDate = new DateTimePicker();
-            dtpOrderDate.Width = 120;
+            dtpOrderDate.Width = 170;
             dtpOrderDate.Value = DateTime.Today;
             tsMain.Items.Add(new ToolStripControlHost(dtpOrderDate));
             bsOrders.DataSource = orderList;
