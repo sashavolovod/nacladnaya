@@ -133,7 +133,9 @@
     <EmbeddedResource Include="frmSettings.resx">
       <DependentUpon>frmSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Nacladnaya-23.rdlc" />
+    <EmbeddedResource Include="Nacladnaya-23.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -145,6 +147,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Nacladnaya.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
     <None Include="app.config" />
     <None Include="Nacladnaya_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />

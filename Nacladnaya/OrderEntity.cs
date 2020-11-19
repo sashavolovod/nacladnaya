@@ -57,6 +57,13 @@ namespace Nacladnaya
             set { _OrderDescription = value; }
         }
 
+        private string _Customer;
+        public string Customer
+        {
+            get { return _Customer; }
+            set { _Customer = value; }
+        }
+
         private string _UnitName;
         public string UnitName
         {
